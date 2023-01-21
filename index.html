@@ -3,15 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>My First Webpage</title>
+    <title>Lemmikkini</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
 </head>
-
 <body>
-    <h1>Welcome to My First Webpage</h1>
-    <p>This is my first webpage, and I'm excited to learn more about HTML.</p>
-    <p>In this webpage, I will be sharing information about my hobbies and interests.</p>
-    <img src="./images/cat.jpg" alt="An image">
-    <p>Link to <a href="https://www.google.com">Google</a> for more information.</p>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#start">Aloitus</a></li>
+            <li><a href="#about">Meistä</a></li>
+            <li><a href="#pictures">Lisää kuvia</a></li>
+        </ul>
+    </nav>
+
+    <section id="start">
+        <h1 class="headings">Iivari<br> ja<br> Amelia</h1>
+    </section>
+    
+    <section id="about">
+        <h1 class="headings">Meistä</h1>
+            <div id="intro">
+                <h2>Iivari ja Amelia</h2>
+                <p>Iivari on 7-vuotias maatiaiskissa uros. Iivari tykkää rampata parvekkeella ja pitää huomiosta.
+                    Iivari on hyvin ihmisläheinen. Iivari ei tykkää juurikaan märkäruuasta ja tämän takia antaa märkäruuan aina kuivua.
+                    Amelia on noin 2-vuotias maatiaiskissa naaras. Amelia on adoptoitu <a href="https://www.pesu.org/">Pesu ry:n</a> kautta. Amelia pitää omasta rauhasta. Amelia on kova varastamaan Iivarin ruokaa.
+                    Amelia rakastaa rutiineja. Jos rutiineista poiketaan, Amelia on vihainen. Molemmat asustelevat omistajiensa kanssa Tampereella tilavassa kolmiossa. Molempien lempileikki on jahdata laservaloa.
+                </p>
+            </div>
+    </section>
+
+    <section id="pictures">
+        <h1 class="headings">Lisää kuvia</h1>
+        <div class="gallery">
+            <img src="./images/iivari.jpg" alt="iivari">
+            <img src="./images/amelia.jpg" alt="amelia">
+        </div>
+    </section>
 </body>
 
 </html>
