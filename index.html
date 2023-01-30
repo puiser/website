@@ -7,10 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css" type="text/css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar sticky-top">
         <ul>
             <li><a href="#start">Aloitus</a></li>
             <li><a href="#about">Meistä</a></li>
@@ -19,31 +21,49 @@
     </nav>
 
     <section id="start">
-        <h1 class="headings">Iivari<br> ja<br> Amelia</h1>
+      <h1 class="headings">Iivari<br> ja<br> Amelia</h1>
     </section>
     
     <section id="about">
         <h1 class="headings">Meistä</h1>
-            <div id="intro">
-                <h2>Iivari ja Amelia</h2>
-                <p>Iivari on 7-vuotias maatiaiskissa uros. Iivari tykkää rampata parvekkeella ja pitää huomiosta.
-                    Iivari on hyvin ihmisläheinen. Iivari ei tykkää juurikaan märkäruuasta ja tämän takia antaa märkäruuan aina kuivua.
-                    Amelia on noin 2-vuotias maatiaiskissa naaras. Amelia on adoptoitu <a href="https://www.pesu.org/">Pesu ry:n</a> kautta. Amelia pitää omasta rauhasta. Amelia on kova varastamaan Iivarin ruokaa.
-                    Amelia rakastaa rutiineja. Jos rutiineista poiketaan, Amelia on vihainen. Molemmat asustelevat omistajiensa kanssa Tampereella tilavassa kolmiossa. Molempien lempileikki on jahdata laservaloa.
-                </p>
+        <div class="grid" id="intro">
+            <div>
+                <h2>Iivari</h2>
+                <p>Iivari on 7-vuotias maatiaiskissa uros. Iivari tykkää rampata parvekkeella ja pitää huomiosta. Iivari on hyvin ihmisläheinen. Iivari ei tykkää juurikaan märkäruuasta ja tämän takia antaa märkäruuan aina kuivua. Lempileikki on jahdata laservaloa.</p>
             </div>
+            <div>
+                <h2>Amelia</h2>
+                <p>Amelia on noin 2-vuotias maatiaiskissa naaras. Amelia on adoptoitu <a href="https://www.pesu.org/">Pesu ry:n</a> kautta. Amelia pitää omasta rauhasta. Amelia on kova varastamaan Iivarin ruokaa. Amelia rakastaa rutiineja. Jos rutiineista poiketaan, Amelia on vihainen. Lempileikki on jahdata laservaloa.</p>
+            </div>
+        </div>
     </section>
 
     <section id="pictures">
         <h1 class="headings">Lisää kuvia</h1>
-        <div class="container">
-            <div class="item-1">
-                <img src="./images/iivari.jpg" alt="iivari">
-            </div>
-            <div class="item-2">
-                <img src="./images/amelia.jpg" alt="amelia">
+            <div id="carousel" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/iivari.jpg" class="d-block w-30" alt="iivari">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/amelia.jpg" class="d-block w-30" alt="amelia">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/kissat2.jpg" class="d-block w-30" alt="kissat">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/kissat3.jpg" class="d-block w-30" alt="kissat">
+                  </div>
                 </div>
-        </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
     </section>
 </body>
 

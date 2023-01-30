@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
@@ -10,35 +9,34 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0,0,0,0.5);
-    position: sticky;
+    background-color: rgba(0,0,0,0.3);
     top: 0;
 }
 .navbar ul{
     display: flex;
     list-style: none;
-    margin: 20px 0px;
+    margin: 10px 0px;
 }
 .navbar ul li{
     font-family: 'Abril Fatface', cursive;
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: lighter;
 }
 .navbar ul li a{
     text-decoration: none;
     color: white;
     padding: 8px 25px;
-    transition: all .5s ease;
+    transition: all .3s ease-in;
 }
 .navbar ul li a:hover{
     background-color: white;
     color: black;
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 8px white;
 }
 #start{
     display: flex;
     flex-direction: column;
-    background-color:rgba(0,0,0,0.5);
+    background-color:rgba(0,0,0,0.3);
     height: 840px;
     justify-content: center;
     align-items: center;
@@ -53,58 +51,52 @@ html{
     height: 900px;
     width: 100%;
     z-index: -1;
-    opacity: .8;
+    opacity: .7;
 }
 .headings{
     font-family: 'Abril Fatface', cursive;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    margin: 40px 0px;
-}
-#about{
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 20px;
-    margin-bottom: 50px;
+    margin: 60px 0px 30px 0px;
 }
 #about a{
     text-decoration: none;
-    color: #448D76;
+    color: white;
 }
 #about a:hover{
     text-decoration: underline;
 }
 #intro{
     font-family: 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
     text-align: justify;
-    padding: 10px;
 }
 #intro h2{
     font-family: 'Abril Fatface', cursive;
     font-size: 2rem;
     margin-bottom: 20px;
+    text-align: center;
 }
-.container{
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 5%;
+    justify-content: center;
+}
+.grid > div {
+    background: rgba(0,0,0,0.3);
+    padding: 1.5rem;
+}
+.carousel-item{
     width: 100%;
     height: auto;
-    margin: 0 auto;
-    display: grid;
-    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
-}
-.item-1{
-    grid-column: 1 / 3;
-    grid-row: 1 / 4;
-}
-.item-2{
-    grid-column: 3 / 5;
-    grid-row: 1 / 4;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 img{
-    display: block;
     max-width: 100%;
-    width: 100%;
-    height: 100%;
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
